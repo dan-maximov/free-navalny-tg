@@ -2,7 +2,7 @@ import { Telegraf } from 'telegraf'
 import { promiseRetryNoArgs } from './utils'
 
 const GROUP_ID = process.env.GROUP_ID as string
-const BOT_TOKEN = process.env.GROUP_ID as string
+const BOT_TOKEN = process.env.BOT_TOKEN as string
 
 const bot = new Telegraf(BOT_TOKEN)
 
