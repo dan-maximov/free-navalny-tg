@@ -4,7 +4,7 @@ import { sendMessageToGroup } from "./bot"
 
 const job = new CronJob('*/5 * * * *', () => {
     getCount().then(count => {
-        sendMessageToGroup(`There is ${count} members`)
+        sendMessageToGroup(`There are ${count} members`)
     })
 }, null, true)
 
