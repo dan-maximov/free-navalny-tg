@@ -6,8 +6,6 @@ const BOT_TOKEN = process.env.GROUP_ID as string
 
 const bot = new Telegraf(BOT_TOKEN)
 
-bot.on('message', console.log)
-
 export const sendMessageToGroup = (message: string): void => {
     promiseRetryNoArgs(() => bot.telegram.sendMessage(GROUP_ID, message)).catch(console.log)
 }
